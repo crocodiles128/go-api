@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/crocodiles128/go-api/controller"
+	controllers "github.com/crocodiles128/go-api/controller"
 	"github.com/gin-gonic/gin"
 )
 
@@ -15,4 +15,4 @@ func ConfigRoutes(router *gin.Engine) *gin.Engine {
 		}
 		return router
 	}
-	}
+}

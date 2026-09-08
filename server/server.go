@@ -3,18 +3,18 @@ package server
 import (
 	"log"
 
-	"github.com/gin-gonic/gin"
 	"github.com/crocodiles128/go-api/server/routes"
+	"github.com/gin-gonic/gin"
 )
 
 type Server struct {
-	port string
+	port   string
 	server *gin.Engine
 }
 
 func NewServer(port string) *Server {
 	return &Server{
-		port: port,
+		port:   port,
 		server: gin.Default(),
 	}
 }
